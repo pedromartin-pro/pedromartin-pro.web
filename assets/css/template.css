@@ -13094,6 +13094,10 @@ img.img-shadow,
     padding: 30px 0;
 }
 
+.feature a {
+    color: #788487;
+}
+
 .maps-container {
     height: 500px;
 }
