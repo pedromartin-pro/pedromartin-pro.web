@@ -11,10 +11,10 @@ import Menu from '@/components/Menu.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
-    name: 'app',
-    components: {
-      Menu,
-      Footer
-    }
+  name: 'app',
+  components: {
+    Menu,
+    Footer
+  }
 }
 </script>
