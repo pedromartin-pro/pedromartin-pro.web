@@ -8,12 +8,10 @@
           <div class="row">
             <div class="col-md-12">
               <h1 class="m-b-20">
-                <strong>Expertos en madera de pino.</strong>
+                <strong>{{ $t('wood_experts') }}.</strong>
               </h1>
               <p class="m-b-40">
-                Trabajamos con madera maciza de pino desde hace 50 años.
-                <br>Tenemos un catálogo de
-                productos más demandados, pero puedes pedirnos produtos a medida.
+                {{ $t('wood50_1') }}<br>.{{ $t('wood50_2') }}
               </p>
               <p>
                 <a
