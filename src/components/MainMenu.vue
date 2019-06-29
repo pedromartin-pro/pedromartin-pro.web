@@ -39,7 +39,10 @@
       </div>
       <div class="extra-nav">
         <ul>
-          <li><a v-on:click="changeLanguage"><span class="menu-item-span">{{ $t('change_language') }}</span></a></li>
+          <li><a v-on:click="changeLanguage('es')" class="top-bar-cart"><span class="menu-item-span"><img src="images/icons/es.png" width="16"></span></a></li>
+          <li><a v-on:click="changeLanguage('en')" class="top-bar-cart"><span class="menu-item-span"><img src="images/icons/en.png" width="16"></span></a></li>
+          <li><a v-on:click="changeLanguage('it')" class="top-bar-cart"><span class="menu-item-span"><img src="images/icons/it.png" width="16"></span></a></li>
+          <li><a v-on:click="changeLanguage('pt')" class="top-bar-cart"><span class="menu-item-span"><img src="images/icons/pt.png" width="16"></span></a></li>
           <li class="nav-toggle">
             <a href="#" data-toggle="collapse" data-target=".inner-navigation">
               <span class="menu-item-span">
@@ -57,10 +60,9 @@
 export default {
   name: 'MainMenu',
   methods: {
-    changeLanguage: function (event) {
-      console.log(this.$i18n)
-      this.$i18n.fallbackLocale = this.$i18n.locale
-      this.$i18n.locale = this.$i18n.locale === 'es' ? 'en' : 'es'
+    changeLanguage: function (language) {
+      this.$i18n.fallbackLocale = language === 'en' ? 'es' : 'en'
+      this.$i18n.locale = language
     }
   }
 }
