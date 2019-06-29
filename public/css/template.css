@@ -14949,7 +14949,7 @@ img.img-shadow,
 }
 
 .footer-bar {
-    text-align: center;
+    /* text-align: center; */
     font-size: .75rem;
     padding: 22px 0;
 }

@@ -19,8 +19,8 @@ export default new Router({
       component: Home
     },
     {
-      path: '/rod',
-      name: 'rod',
+      path: '/rods',
+      name: 'rods',
       component: Rod
     },
     {

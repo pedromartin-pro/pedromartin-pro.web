@@ -21,7 +21,7 @@
             </li>
             <li>
               <router-link to="/tailored">
-                <span class="menu-item-span">A {{ $t('tailored') }}</span>
+                <span class="menu-item-span">{{ $t('tailored') }}</span>
               </router-link>
             </li>
             <li>
@@ -39,10 +39,10 @@
       </div>
       <div class="extra-nav">
         <ul>
-          <li><a v-on:click="changeLanguage('es')" class="top-bar-cart"><span class="menu-item-span"><img src="images/icons/es.png" width="16"></span></a></li>
-          <li><a v-on:click="changeLanguage('en')" class="top-bar-cart"><span class="menu-item-span"><img src="images/icons/en.png" width="16"></span></a></li>
-          <li><a v-on:click="changeLanguage('it')" class="top-bar-cart"><span class="menu-item-span"><img src="images/icons/it.png" width="16"></span></a></li>
-          <li><a v-on:click="changeLanguage('pt')" class="top-bar-cart"><span class="menu-item-span"><img src="images/icons/pt.png" width="16"></span></a></li>
+          <li><a v-on:click="changeLanguage('es')" class="top-bar-cart"><img src="images/icons/es.png" class="menu-item-span" width="16"></a></li>
+          <li><a v-on:click="changeLanguage('en')" class="top-bar-cart"><img src="images/icons/en.png" class="menu-item-span" width="16"></a></li>
+          <li><a v-on:click="changeLanguage('it')" class="top-bar-cart"><img src="images/icons/it.png" class="menu-item-span" width="16"></a></li>
+          <li><a v-on:click="changeLanguage('pt')" class="top-bar-cart"><img src="images/icons/pt.png" class="menu-item-span" width="16"></a></li>
           <li class="nav-toggle">
             <a href="#" data-toggle="collapse" data-target=".inner-navigation">
               <span class="menu-item-span">
