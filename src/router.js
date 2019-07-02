@@ -43,5 +43,8 @@ export default new Router({
       name: 'contact',
       component: Contact
     }
-  ]
+  ],
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  }
 })
