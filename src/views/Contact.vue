@@ -24,7 +24,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-9 m-auto text-center">
-            <p>Puedes mandarnos un email, llamarnos por teléfono o escribirnos un mensaje en el formulario de abajo.</p>
+            <p>Puedes mandarnos un email o llamarnos por teléfono</p>
           </div>
         </div>
         <div class="row">
@@ -71,7 +71,7 @@
     <!-- Services end-->
 
     <!-- Form-->
-    <section class="module divider-top">
+    <!-- <section class="module divider-top">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-9 m-auto text-center">
@@ -98,7 +98,7 @@
                       name="name"
                       placeholder="Nombre"
                       required
-                    >
+                    />
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@
                       name="company"
                       placeholder="Empresa"
                       required
-                    >
+                    />
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -122,7 +122,7 @@
                       name="email"
                       placeholder="E-mail"
                       required
-                    >
+                    />
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@
                       name="phone"
                       placeholder="Teléfono"
                       required
-                    >
+                    />
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -152,29 +152,39 @@
                 <div class="col-md-12">
                   <p></p>
                   <div class="text-center">
-                    <input class="btn btn-circle btn-brand" type="submit" value="Enviar mensaje">
+                    <input class="btn btn-circle btn-brand" type="submit" value="Enviar mensaje" />
                   </div>
                 </div>
               </div>
             </form>
-            <!-- Ajax response-->
             <div class="ajax-response text-center" id="contact-response"></div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Form end-->
 
-    <!-- Map-->
     <section id="map" class="maps-container">
-      <div
-        class="map"
-        data-addresses="[41.9521724, -2.9276217]"
-        data-info="[Lorem ipsum dolor sit amet.]"
-        data-icon="assets/images/map-icon.png"
-        data-zoom="7"
-      ></div>
+      <gmap-map class="map" :center="center" :zoom="zoom">
+        <gmap-marker :position="center" :clickable="true" :draggable="true" :icon="{ url: require('../../public/images/map-icon.png')}"></gmap-marker>
+      </gmap-map>
     </section>
-    <!-- Map end-->
   </div>
 </template>
+
+<script>
+import Map from "vue2-google-maps";
+
+export default {
+  name: "contact",
+  components: {
+    Map
+  },
+  data() {
+    return {
+      center: { lat: 41.9521724, lng: -2.9276217 },
+      zoom: 7
+    };
+  },
+};
+</script>
