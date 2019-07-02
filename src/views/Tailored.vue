@@ -62,12 +62,12 @@
 </template>
 
 <script>
-import Tailored from "@/components/Tailored.vue";
+import Tailored from '@/components/Tailored.vue'
 
 export default {
-  name: "tailored",
+  name: 'tailored',
   components: {
     Tailored
   }
-};
+}
 </script>

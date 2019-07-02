@@ -41,7 +41,7 @@
             <a href="#">
               <div class="timeline-card">
                 <div class="timeline-card-preview">
-                  <img src="images/shop/1.jpg" alt>
+                  <img src="/images/shop/1.jpg" alt>
                 </div>
                 <div class="timeline-card-body">
                   <h4>Nosotros</h4>
@@ -58,7 +58,7 @@
             <a href="#">
               <div class="timeline-card">
                 <div class="timeline-card-preview">
-                  <img src="images/shop/1.jpg" alt>
+                  <img src="/images/shop/1.jpg" alt>
                 </div>
                 <div class="timeline-card-body">
                   <h4>Nuestra historia</h4>
@@ -75,7 +75,7 @@
             <a href="#">
               <div class="timeline-card">
                 <div class="timeline-card-preview">
-                  <img src="images/shop/1.jpg" alt>
+                  <img src="/images/shop/1.jpg" alt>
                 </div>
                 <div class="timeline-card-body">
                   <h4>Comarca de pinares</h4>

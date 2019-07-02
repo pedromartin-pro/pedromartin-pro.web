@@ -173,18 +173,13 @@
 </template>
 
 <script>
-import Map from "vue2-google-maps";
-
 export default {
-  name: "contact",
-  components: {
-    Map
-  },
-  data() {
+  name: 'contact',
+  data () {
     return {
       center: { lat: 41.9521724, lng: -2.9276217 },
       zoom: 7
-    };
-  },
-};
+    }
+  }
+}
 </script>
