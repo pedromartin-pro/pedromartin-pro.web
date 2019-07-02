@@ -340,12 +340,12 @@
 </template>
 
 <script>
-import EndOfTheRoad from "@/components/EndOfTheRoad.vue";
+import EndOfTheRoad from '@/components/EndOfTheRoad.vue'
 
 export default {
-  name: "product",
+  name: 'product',
   components: {
     EndOfTheRoad
   }
-};
+}
 </script>

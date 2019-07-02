@@ -24,7 +24,7 @@ export default new Router({
     {
       path: '/rods',
       name: 'rods',
-      component: Rod,
+      component: Rod
     },
     {
       path: '/rods/food',
