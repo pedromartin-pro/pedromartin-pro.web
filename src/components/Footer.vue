@@ -10,12 +10,18 @@
               </div>
               <div class="textwidget">
                 <p>
-                  <span class="ti-email">hola@pedromartin.pro</span>
+                  <a href="mailto:hola@pedromartin.pro">
+                    <span class="ti-email"> hola@pedromartin.pro</span>
+                  </a>
                   <br>
-                  <span class="ti-headphone-alt">+34 975 371 XXX</span>
+
+                  <span class="d-block d-lg-none">
+                    <a href="tel:+34975371XXX"><span class="ti-headphone-alt"> +34 975 371 XXX</span></a>
+                  </span>
+                  <span class="d-none d-lg-block"><span class="ti-headphone-alt"> +34 975 371 XXX</span></span>
                 </p>
                 <p>
-                  O puedes escribirnos un mensaje en la <a href="contacto.html">página de contacto</a>.
+                  O puedes escribirnos un mensaje en la <router-link to="/contact">página de contacto</router-link>.
                 </p>
               </div>
             </aside>
