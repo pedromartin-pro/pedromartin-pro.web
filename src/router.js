@@ -6,6 +6,8 @@ import Shutters from './views/Shutters.vue'
 import Tailored from './views/Tailored.vue'
 import About from './views/About.vue'
 import Contact from './views/Contact.vue'
+import Error404 from './views/Error404.vue'
+// import Product from './views/Product.vue'
 
 Vue.use(Router)
 
@@ -21,7 +23,13 @@ export default new Router({
     {
       path: '/rods',
       name: 'rods',
-      component: Rod
+      component: Rod,
+      // children: [
+      //   {
+      //     path: 'food',
+      //     component: Product
+      //   }
+      // ]
     },
     {
       path: '/shutters',
@@ -42,6 +50,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/*',
+      name: 'error404',
+      component: Error404
     }
   ],
   scrollBehavior () {
