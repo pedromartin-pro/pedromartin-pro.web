@@ -8,7 +8,7 @@
             <h2>Varillas</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
-                <a href="../index.html">Inicio</a>
+                <router-link to="/">Inicio</router-link>
               </li>
               <li class="breadcrumb-item active">Varillas</li>
             </ol>
@@ -26,34 +26,34 @@
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <a href="alimentacion.html">
+                <router-link to="/rods/food">
                   <img src="images/shop/1.jpg" alt>
-                </a>
+                </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">Ver producto</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <a href="alimentacion.html">
+                <router-link to="/rods/food">
                   <h6 class="shop-item-title">Palillo de alimentación</h6>
-                </a>
+                </router-link>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <a href="pirotecnia.html">
+                <router-link to="/rods/pyrotechnics">
                   <img src="images/shop/1.jpg" alt>
-                </a>
+                </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">Ver producto</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <a href="pirotecnia.html">
+                <router-link to="/rods/pyrotechnics">
                   <h6 class="shop-item-title">Varilla de pirotécnia</h6>
-                </a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
         <div class="row justify-content-center">
           <div class="col-md-4">
             <div class="feature">
-              <a href="../a-medida.html">
+              <router-link to="/tailored">
                 <div class="feature-thumb">
                   <img src="images/shop/1.jpg" alt>
                 </div>
@@ -86,12 +86,12 @@
                   <h6>A medida</h6>
                   <p>Gran parte de nuestro trabajo es crear productos a medida de las necesidades de nuestros clientes. Pon a prueba a nuestro equipo de ebanistas. Por muy loco que te parezca, creenos, será dificil que nos sorprenda.</p>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="col-md-4">
             <div class="feature">
-              <a href="../contacto.html">
+              <router-link to="/contact">
                 <div class="feature-thumb">
                   <img src="images/shop/1.jpg" alt>
                 </div>
@@ -99,7 +99,7 @@
                   <h6>O contáctanos</h6>
                   <p>Si todavía no lo tienes claro, puedes mandarnos un email, llamarnos por teléfono o escribirnos un mensaje en la pagina de contacto.</p>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>

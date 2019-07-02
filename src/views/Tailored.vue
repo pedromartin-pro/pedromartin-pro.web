@@ -7,7 +7,7 @@
             <h2>A medida</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
-                <a href="../index.html">Inicio</a>
+                <router-link to="/">Inicio</router-link>
               </li>
               <li class="breadcrumb-item active">A medida</li>
             </ol>
