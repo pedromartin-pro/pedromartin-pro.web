@@ -14,10 +14,9 @@
                 {{ $t('wood50_1') }}<br>.{{ $t('wood50_2') }}
               </p>
               <p>
-                <a
-                  class="btn btn-lg btn-circle btn-outline-new-white"
-                  href="#main-products"
-                >Nuestros productos</a>
+                <a class="btn btn-lg btn-circle btn-outline-new-white" href="#main-products">
+                  {{ $t('our_products') }}
+                </a>
               </p>
             </div>
           </div>
@@ -37,9 +36,9 @@
                     <img src="/images/shop/1.jpg" alt>
                   </div>
                   <div class="timeline-card-body">
-                    <h4>Varilla o palillo</h4>
-                    <p>Fabricamos varilla del tamaño que necesites, ya sea redonda o cuadrada. Las más demandadas son la varilla de alimentación (o de feria) y el palillo de pirotecnia, pero pídenos los que necesites.</p>
-                    <p class="blue-link">Ver opciones de varillas</p>
+                    <h4>{{ $t('rod_or_rod') }}</h4>
+                    <p>{{ $t('rod_or_rod_explained') }}.</p>
+                    <p class="blue-link">{{ $t('show_rod_options') }}</p>
                   </div>
                 </div>
               </router-link>
@@ -51,9 +50,9 @@
                     <img src="/images/shop/1.jpg" alt>
                   </div>
                   <div class="timeline-card-body">
-                    <h4>Persiana</h4>
-                    <p>Fabricamos diferentes piezas de persiana. Las más demandadas son las lamas y los montantes (para persina de plástico o de madera) con diferentes acabados y molduras.</p>
-                    <p class="blue-link">Ver opciones de persina</p>
+                    <h4>{{ $t('shutters') }}</h4>
+                    <p>{{ $t('shutters_explained') }}.</p>
+                    <p class="blue-link">{{ $t('show_shutters_options') }}</p>
                   </div>
                 </div>
               </router-link>
@@ -72,7 +71,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-9 m-auto text-center">
-              <h1>Nuestro trabajo</h1>
+              <h1>{{ $t('our_work') }}</h1>
             </div>
           </div>
           <div class="row">
@@ -87,8 +86,8 @@
                   <img src="/images/shop/1.jpg" alt>
                 </div>
                 <div class="feature-content">
-                  <h6>Ebanistas expertos</h6>
-                  <p>Somos un equipo de ebanistas con muchos años de experiencia creando todo tipo de productos de madera, especialmente de pino.</p>
+                  <h6>{{ $t('cabinetmaker') }}</h6>
+                  <p>{{ $t('cabinetmaker_explained') }}.</p>
                 </div>
               </div>
             </div>
@@ -98,8 +97,8 @@
                   <img src="/images/shop/1.jpg" alt>
                 </div>
                 <div class="feature-content">
-                  <h6>Madera de pino de Soria</h6>
-                  <p>Tenemos la suerte de estar en la comarca de pinares entre Burgos y Soria, por lo que trabajamos con serrerias locales que nos proveen de un pino de altísma calidad.</p>
+                  <h6>{{ $t('pine_wood') }}</h6>
+                  <p>{{ $t('pine_wood_explained') }}.</p>
                 </div>
               </div>
             </div>
@@ -109,8 +108,8 @@
                   <img src="/images/shop/1.jpg" alt>
                 </div>
                 <div class="feature-content">
-                  <h6>Calidad y precio</h6>
-                  <p>Debido a nuestra experiencia y la calidad de nuestra madera local, podemos ofrecer una calidad muy alta a un precio muy competitivo.</p>
+                  <h6>{{ $t('quality_price') }}</h6>
+                  <p>{{ $t('quality_price_explained') }}.</p>
                 </div>
               </div>
             </div>

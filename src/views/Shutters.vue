@@ -7,7 +7,7 @@
             <h2>Persiana</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
-                <router-link to="/">Inicio</router-link>
+                <router-link to="/">{{ $t('home') }}</router-link>
               </li>
               <li class="breadcrumb-item active">Persiana</li>
             </ol>

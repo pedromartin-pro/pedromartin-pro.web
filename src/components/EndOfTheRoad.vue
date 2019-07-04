@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-9 m-auto text-center">
-          <h1>¿No encuentras lo que buscas?</h1>
+          <h1>{{ $t('find_looking_for') }}</h1>
         </div>
       </div>
       <div class="row">
@@ -19,8 +19,8 @@
                 <img src="/images/shop/1.jpg" alt />
               </div>
               <div class="feature-content">
-                <h6>A medida</h6>
-                <p>Gran parte de nuestro trabajo es crear productos a medida de las necesidades de nuestros clientes. Pon a prueba a nuestro equipo de ebanistas. Por muy loco que te parezca, creenos, será dificil que nos sorprenda.</p>
+                <h6>{{ $t('tailored') }}</h6>
+                <p>{{ $t('tailored_explained') }}.</p>
               </div>
             </router-link>
           </div>
@@ -32,8 +32,8 @@
                 <img src="/images/shop/1.jpg" alt />
               </div>
               <div class="feature-content">
-                <h6>O contáctanos</h6>
-                <p>Si todavía no lo tienes claro, puedes mandarnos un email, llamarnos por teléfono o escribirnos un mensaje en la pagina de contacto.</p>
+                <h6>{{ $t('contact_us') }}</h6>
+                <p>{{ $t('contact_us_explained') }}.</p>
               </div>
             </router-link>
           </div>

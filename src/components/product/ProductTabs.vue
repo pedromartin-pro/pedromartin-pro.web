@@ -11,7 +11,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#shop-info">
-                <h6>{{ $t('additional_information') }}</h6>
+                <h6>{{ $t('details') }}</h6>
               </a>
             </li>
           </ul>
@@ -27,8 +27,8 @@
               <table class="table">
                 <tbody>
                   <tr>
-                    <th>{{ $t('Title') }}</th>
-                    <th>{{ $t('Info') }}</th>
+                    <th>{{ $t('title') }}</th>
+                    <th>{{ $t('info') }}</th>
                   </tr>
                   <tr v-for="option in options">
                     <th>{{option.title}}</th>

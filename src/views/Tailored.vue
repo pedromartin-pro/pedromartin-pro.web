@@ -4,12 +4,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>A medida</h2>
+            <h2>{{ $t('tailored') }}</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
-                <router-link to="/">Inicio</router-link>
+                <router-link to="/">{{ $t('home') }}</router-link>
               </li>
-              <li class="breadcrumb-item active">A medida</li>
+              <li class="breadcrumb-item active">{{ $t('tailored') }}</li>
             </ol>
           </div>
         </div>
@@ -25,8 +25,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-9 m-auto text-center">
-            <h2>Pídenos lo que necesitas.</h2>
-            <p class="lead">Escríbenos un email o llamarnos por teléfono, cuéntanos que necesitas y te haremos un presupuesto lo antes posible.</p>
+            <h2>{{ $t('what_do_you_need') }}</h2>
+            <p class="lead">{{ $t('what_do_you_need_extended') }}.</p>
           </div>
         </div>
         <div class="row">

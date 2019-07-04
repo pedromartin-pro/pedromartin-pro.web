@@ -8,7 +8,7 @@
             <h2>Contacto</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
-                <router-link to="/">Inicio</router-link>
+                <router-link to="/">{{ $t('home') }}</router-link>
               </li>
               <li class="breadcrumb-item active">Contacto</li>
             </ol>
