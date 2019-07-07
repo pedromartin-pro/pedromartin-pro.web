@@ -1,3 +1,5 @@
+import i18n from './i18n'
+
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
@@ -15,72 +17,92 @@ import ShutterSlat from './views/products/ShutterSlat.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: { title: 'wood_experts' }
     },
     {
       path: '/rods',
       name: 'rods',
-      component: Rod
+      component: Rod,
+      meta: { title: 'rods' }
     },
     {
       path: '/rods/food',
       name: 'food-rods',
-      component: RodFood
+      component: RodFood,
+      meta: { title: 'rod_food' }
     },
     {
       path: '/rods/pyrotechnics',
       name: 'food-pyrotechnics',
-      component: RodPyrotechnics
+      component: RodPyrotechnics,
+      meta: { title: 'rod_pyro' }
     },
     {
       path: '/shutters',
       name: 'shutters',
-      component: Shutters
+      component: Shutters,
+      meta: { title: 'shutters' }
     },
     {
       path: '/shutters/plastic-stile',
       name: 'plastic-stile',
-      component: ShutterPlasticStile
+      component: ShutterPlasticStile,
+      meta: { title: '' }
     },
     {
       path: '/shutters/wooden-stile',
       name: 'wooden-stile',
-      component: ShutterWoodenStile
+      component: ShutterWoodenStile,
+      meta: { title: 'plastic_stile' }
     },
     {
       path: '/shutters/slats',
       name: 'slats',
-      component: ShutterSlat
+      component: ShutterSlat,
+      meta: { title: 'wooden_stile' }
     },
     {
       path: '/tailored',
       name: 'tailored',
-      component: Tailored
+      component: Tailored,
+      meta: { title: 'tailored' }
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
+      meta: { title: 'about_us' }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: Contact
+      component: Contact,
+      meta: { title: 'contact' }
     },
     {
       path: '/*',
       name: 'error404',
-      component: Error404
+      component: Error404,
+      meta: { title: 'not_found' }
     }
   ],
   scrollBehavior () {
     return { x: 0, y: 0 }
   }
 })
+
+router.beforeEach((to, from, next) => {
+  const subtitle = `- ${i18n.t(to.meta.title) || ''}`
+  document.title = `Pedro Martin ${subtitle}`
+  next()
+})
+
+export default router;
