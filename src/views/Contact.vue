@@ -5,12 +5,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>Contacto</h2>
+            <h2>{{ $t('contact') }}</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
                 <router-link to="/">{{ $t('home') }}</router-link>
               </li>
-              <li class="breadcrumb-item active">Contacto</li>
+              <li class="breadcrumb-item active">{{ $t('contact') }}</li>
             </ol>
           </div>
         </div>
@@ -24,7 +24,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-9 m-auto text-center">
-            <p>Puedes mandarnos un email o llamarnos por teléfono</p>
+            <p>{{ $t('email_or_call') }}.</p>
           </div>
         </div>
         <div class="row">
@@ -60,7 +60,7 @@
               </div>
               <div class="icon-box-title">
                 <h6>
-                  <a href="#map">Ver en el mapa</a>
+                  <a href="#map">{{ $t('show_in_the_map') }}</a>
                 </h6>
               </div>
             </div>

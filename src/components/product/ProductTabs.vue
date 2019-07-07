@@ -6,7 +6,7 @@
           <ul class="nav nav-tabs justify-content-center">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#shop-description">
-                <h6>{{ $t('description') }}</h6>
+                <h6><p>{{ $t('description') }}</p></h6>
               </a>
             </li>
             <li class="nav-item">

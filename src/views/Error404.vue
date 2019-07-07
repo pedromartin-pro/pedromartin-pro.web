@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>Página no encontrada</h2>
+            <h2>{{ $t('not_found') }}</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
                 Error 404
@@ -18,7 +18,9 @@
 
     <section class="module">
       <div class="container">
-        <h4>-> <router-link to="/">Ir a la pagina de inicio</router-link></h4>
+        <p>
+          <router-link to="/" class="btn btn-block btn-dark">Ir a la pagina de inicio</router-link>
+        </p>
       </div>
     </section>
   </div>

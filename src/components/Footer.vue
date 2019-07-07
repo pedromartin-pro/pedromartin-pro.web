@@ -6,7 +6,7 @@
           <div class="col-md-6">
             <aside class="widget widget-text">
               <div class="widget-title">
-                <h6>¿Tienes alguna duda?</h6>
+                <h6>{{ $t('doubs') }}</h6>
               </div>
               <div class="textwidget">
                 <p>
@@ -20,23 +20,23 @@
                   </span>
                   <span class="d-none d-lg-block"><span class="ti-headphone-alt"> +34 975 371 XXX</span></span>
                 </p>
-                <p>
+                <!-- <p>
                   O puedes escribirnos un mensaje en la <router-link to="/contact">página de contacto</router-link>.
-                </p>
+                </p> -->
               </div>
             </aside>
           </div>
           <div class="col-md-6">
             <aside class="widget widget-text">
               <div class="widget-title">
-                <h6>Dirección</h6>
+                <h6>{{ $t('address') }}</h6>
               </div>
               <div class="textwidget">
                 <p>
                   Poligono Industrial Santa Ana
                   <br>Av. Félix Herrero
                   <br>Duruelo de la Sierra, Soria
-                  <br>España
+                  <br>{{ $t('spain') }}
                 </p>
               </div>
             </aside>

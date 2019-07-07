@@ -26,8 +26,7 @@ export default {
   props: {
     name: String,
     parent: String,
-    parentLink: String,
+    parentLink: String
   }
 }
 </script>
-

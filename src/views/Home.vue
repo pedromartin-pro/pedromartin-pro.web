@@ -79,41 +79,7 @@
               <div class="space" data-m-y="60px"></div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="feature">
-                <div class="feature-thumb">
-                  <img src="/images/shop/1.jpg" alt>
-                </div>
-                <div class="feature-content">
-                  <h6>{{ $t('cabinetmaker') }}</h6>
-                  <p>{{ $t('cabinetmaker_explained') }}.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature">
-                <div class="feature-thumb">
-                  <img src="/images/shop/1.jpg" alt>
-                </div>
-                <div class="feature-content">
-                  <h6>{{ $t('pine_wood') }}</h6>
-                  <p>{{ $t('pine_wood_explained') }}.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature">
-                <div class="feature-thumb">
-                  <img src="/images/shop/1.jpg" alt>
-                </div>
-                <div class="feature-content">
-                  <h6>{{ $t('quality_price') }}</h6>
-                  <p>{{ $t('quality_price_explained') }}.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <OurWork></OurWork>
         </div>
       </section>
       <!-- Feature end-->
@@ -124,11 +90,13 @@
 
 <script>
 import Tailored from '@/components/Tailored.vue'
+import OurWork from '@/components/OurWork.vue'
 
 export default {
   name: 'home',
   components: {
-    Tailored
+    Tailored,
+    OurWork
   }
 }
 </script>
