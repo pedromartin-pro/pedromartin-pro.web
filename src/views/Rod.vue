@@ -4,12 +4,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>Varillas</h2>
+            <h2>{{ $t('rods') }}</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
                 <router-link to="/">{{ $t('home') }}</router-link>
               </li>
-              <li class="breadcrumb-item active">{{ $t('rods') }}2</li>
+              <li class="breadcrumb-item active">{{ $t('rods') }}</li>
             </ol>
           </div>
         </div>
@@ -27,12 +27,12 @@
                   <img src="/images/shop/1.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">Ver producto</a>
+                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
                 <router-link to="/rods/food">
-                  <h6 class="shop-item-title">Palillo de alimentación</h6>
+                  <h6 class="shop-item-title">{{ $t('rod_food') }}</h6>
                 </router-link>
               </div>
             </div>
@@ -44,12 +44,12 @@
                   <img src="/images/shop/1.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">Ver producto</a>
+                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
                 <router-link to="/rods/pyrotechnics">
-                  <h6 class="shop-item-title">Varilla de pirotécnia</h6>
+                  <h6 class="shop-item-title">{{ $t('rod_pyro') }}</h6>
                 </router-link>
               </div>
             </div>

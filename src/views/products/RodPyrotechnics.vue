@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <ProductHeader
-      :name="t('rod_food')"
+      :name="t('rod_pyro')"
       :parent="t('rods')"
       parentLink="rods"
     ></ProductHeader>
@@ -15,8 +15,9 @@
               :images="['/images/shop/1.jpg', '/images/shop/1.jpg', '/images/shop/1.jpg']"
             ></ProductImages>
           </div>
-          <div class="col-lg-3">
-            <RodFoodForm></RodFoodForm>
+          <div class="col-lg-3 bg-gray">
+            <!-- <RodFoodForm></RodFoodForm> -->
+            <ContactForm></ContactForm>
           </div>
         </div>
       </div>
@@ -24,7 +25,7 @@
 
     <section class="module p-t-0">
       <ProductTabs
-        description="<p>lalalalalalala lalalalalalala</p>"
+        :description="t('rod_pyro')"
         :options="[{title:'op1', value:'val1'}, {title:'op2', value:'val2'}]"
       ></ProductTabs>
     </section>
@@ -37,7 +38,8 @@
 import ProductHeader from '@/components/product/ProductHeader.vue'
 import ProductImages from '@/components/product/ProductImages.vue'
 import ProductTabs from '@/components/product/ProductTabs.vue'
-import RodFoodForm from '@/components/forms/RodFoodForm.vue'
+// import RodFoodForm from '@/components/forms/RodFoodForm.vue'
+import ContactForm from '@/components/forms/ContactForm.vue'
 import EndOfTheRoad from '@/components/EndOfTheRoad.vue'
 
 export default {
@@ -46,7 +48,8 @@ export default {
     ProductHeader,
     ProductImages,
     ProductTabs,
-    RodFoodForm,
+    // RodFoodForm,
+    ContactForm,
     EndOfTheRoad
   },
   data () {

@@ -4,12 +4,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>Persiana</h2>
+            <h2>{{ $t('shutters') }}</h2>
             <ol class="breadcrumb justify-content-center">
               <li class="breadcrumb-item">
                 <router-link to="/">{{ $t('home') }}</router-link>
               </li>
-              <li class="breadcrumb-item active">Persiana</li>
+              <li class="breadcrumb-item active">{{ $t('shutters') }}</li>
             </ol>
           </div>
         </div>
@@ -17,65 +17,63 @@
       <div class="overlay-background" style="opacity: 0.6;"></div>
     </section>
 
-    <!-- Shop Grid-->
     <section class="module">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <a href="montante-enfundar-plastico.html">
+                <router-link to="/shutters/plastic-stile">
                   <img src="/images/shop/1.jpg" alt>
-                </a>
+                </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">Ver producto</a>
+                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <a href="montante-enfundar-plastico.html">
-                  <h6 class="shop-item-title">Montante de enfundar para persiana de plástico</h6>
-                </a>
+                <router-link to="/shutters/plastic-stile">
+                  <h6 class="shop-item-title">{{ $t('plastic_stile') }}</h6>
+                </router-link>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <a href="montante-remate-madera.html">
+                <router-link to="/shutters/wooden-stile">
                   <img src="/images/shop/1.jpg" alt>
-                </a>
+                </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">Ver producto</a>
+                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <a href="montante-remate-madera.html">
-                  <h6 class="shop-item-title">Montante de remate para persiana de madera</h6>
-                </a>
+                <router-link to="/shutters/wooden-stile">
+                  <h6 class="shop-item-title">{{ $t('wooden_stile') }}</h6>
+                </router-link>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <a href="lamas.html">
+                <router-link to="/shutters/slats">
                   <img src="/images/shop/1.jpg" alt>
-                </a>
+                </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">Ver producto</a>
+                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <a href="lamas.html">
-                  <h6 class="shop-item-title">Lamas</h6>
-                </a>
+                <router-link to="/shutters/slats">
+                  <h6 class="shop-item-title">{{ $t('slats') }}</h6>
+                </router-link>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Shop Grid end-->
 
     <EndOfTheRoad></EndOfTheRoad>
   </div>

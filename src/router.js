@@ -7,8 +7,11 @@ import Tailored from './views/Tailored.vue'
 import About from './views/About.vue'
 import Contact from './views/Contact.vue'
 import Error404 from './views/Error404.vue'
-import RodFood from './views/RodFood.vue'
-import RodPyrotechnics from './views/RodFood.vue'
+import RodFood from './views/products/RodFood.vue'
+import RodPyrotechnics from './views/products/RodPyrotechnics.vue'
+import ShutterPlasticStile from './views/products/ShutterPlasticStile.vue'
+import ShutterWoodenStile from './views/products/ShutterWoodenStile.vue'
+import ShutterSlat from './views/products/ShutterSlat.vue'
 
 Vue.use(Router)
 
@@ -40,6 +43,21 @@ export default new Router({
       path: '/shutters',
       name: 'shutters',
       component: Shutters
+    },
+    {
+      path: '/shutters/plastic-stile',
+      name: 'plastic-stile',
+      component: ShutterPlasticStile
+    },
+    {
+      path: '/shutters/wooden-stile',
+      name: 'wooden-stile',
+      component: ShutterWoodenStile
+    },
+    {
+      path: '/shutters/slats',
+      name: 'slats',
+      component: ShutterSlat
     },
     {
       path: '/tailored',
