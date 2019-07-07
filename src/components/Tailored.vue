@@ -6,7 +6,7 @@
       </div>
       <div class="col-lg-5 offset-lg-1">
         <h2>{{ $t('tailored') }}.</h2>
-        <p class="lead">{{ $t('tailored_explained') }}</p>
+        <p class="lead">{{ $t('tailored_explained') }}.</p>
         <div class="space" data-m-y="50px"></div>
         <div class="icon-box icon-box-left">
           <div class="icon-box-icon">
