@@ -71,14 +71,12 @@
     <!-- Services end-->
 
     <!-- Form-->
-    <!-- <section class="module divider-top">
+    <section class="module divider-top">
       <div class="container">
-        <div class="row">
+        <div class="row p-b-40">
           <div class="col-lg-6 col-md-9 m-auto text-center">
-            <h1>Escríbenos un mensaje.</h1>
-            <p
-              class="lead"
-            >Estamos encantados de que nos escribas y te responderemos lo más rápido posible.</p>
+            <h1>{{ $t('write_to_us_a_message') }}.</h1>
+            <p class="lead">{{ $t('delighted_you_write_to_us') }}.</p>
           </div>
         </div>
         <div class="row">
@@ -88,7 +86,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <form id="contact-form" method="post" novalidate>
+            <form id="contact" method="post" data-netlify="true">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -96,7 +94,7 @@
                       class="form-control"
                       type="text"
                       name="name"
-                      placeholder="Nombre"
+                      :placeholder="$t('name')"
                       required
                     />
                     <p class="help-block text-danger"></p>
@@ -108,7 +106,7 @@
                       class="form-control"
                       type="text"
                       name="company"
-                      placeholder="Empresa"
+                      :placeholder="$t('company')"
                       required
                     />
                     <p class="help-block text-danger"></p>
@@ -120,7 +118,7 @@
                       class="form-control"
                       type="email"
                       name="email"
-                      placeholder="E-mail"
+                      :placeholder="$t('email')"
                       required
                     />
                     <p class="help-block text-danger"></p>
@@ -132,7 +130,7 @@
                       class="form-control"
                       type="text"
                       name="phone"
-                      placeholder="Teléfono"
+                      :placeholder="$t('phone')"
                       required
                     />
                     <p class="help-block text-danger"></p>
@@ -143,7 +141,7 @@
                     <textarea
                       class="form-control"
                       name="message"
-                      placeholder="Mensaje"
+                      :placeholder="$t('message')"
                       rows="12"
                       required
                     ></textarea>
@@ -152,7 +150,10 @@
                 <div class="col-md-12">
                   <p></p>
                   <div class="text-center">
-                    <input class="btn btn-circle btn-brand" type="submit" value="Enviar mensaje" />
+                    <input
+                      class="btn btn-circle btn-brand"
+                      type="submit"
+                      :value="$t('send_message')" />
                   </div>
                 </div>
               </div>
@@ -161,7 +162,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- Form end-->
 
     <section id="map" class="maps-container">
