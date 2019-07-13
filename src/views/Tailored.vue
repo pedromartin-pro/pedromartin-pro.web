@@ -26,7 +26,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-9 m-auto text-center">
             <h2>{{ $t('what_do_you_need') }}</h2>
-            <p class="lead">{{ $t('what_do_you_need_extended') }}.</p>
+            <p>{{ $t('what_do_you_need_extended') }}.</p>
           </div>
         </div>
         <div class="row">

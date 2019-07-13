@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <!-- Brand-->
       <div class="inner-header">
-        <router-link class="inner-brand" to="/">Pedro Martín</router-link>
+        <router-link class="inner-brand" to="/"><img id="logo" src="/images/logo.svg" alt="Pedro Martin"></router-link>
       </div>
       <!-- Navigation-->
       <div class="inner-navigation collapse">

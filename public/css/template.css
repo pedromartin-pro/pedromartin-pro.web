@@ -13473,6 +13473,10 @@ img.img-shadow,
     display: none;
 }
 
+#logo {
+    width: 150px;
+}
+
 @media (min-width: 992px) {
     .nav-toggle {
         display: none !important;
@@ -13481,9 +13485,21 @@ img.img-shadow,
     .inner-navigation.collapse {
         display: block;
     }
+
+    #logo {
+        filter: invert(100%);
+    }
+
+    .header-transparent.header-small #logo {
+        filter: invert(0%);
+    }
 }
 
 @media (max-width: 991.98px) {
+    #logo {
+        filter: invert(0%);
+    }
+
     .wrapper {
         padding-top: 74px;
     }

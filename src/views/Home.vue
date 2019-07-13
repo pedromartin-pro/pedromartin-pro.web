@@ -7,11 +7,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="m-b-20">
-                <strong>{{ $t('wood_experts') }}.</strong>
+              <h1 class="m-b-20">{{ $t('wood_experts') }}
               </h1>
               <p class="m-b-40">
-                {{ $t('wood50_1') }}<br>.{{ $t('wood50_2') }}
+                {{ $t('wood50_1') }}.<br>{{ $t('wood50_2') }}
               </p>
               <p>
                 <a class="btn btn-lg btn-circle btn-outline-new-white" href="#main-products">

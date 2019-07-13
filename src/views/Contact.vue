@@ -76,7 +76,7 @@
         <div class="row p-b-40">
           <div class="col-lg-6 col-md-9 m-auto text-center">
             <h1>{{ $t('write_to_us_a_message') }}.</h1>
-            <p class="lead">{{ $t('delighted_you_write_to_us') }}.</p>
+            <p>{{ $t('delighted_you_write_to_us') }}.</p>
           </div>
         </div>
         <div class="row">
