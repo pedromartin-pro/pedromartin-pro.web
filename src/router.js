@@ -55,19 +55,19 @@ const router = new Router({
       path: '/shutters/plastic-stile',
       name: 'plastic-stile',
       component: ShutterPlasticStile,
-      meta: { title: '' }
+      meta: { title: 'plastic_stile' }
     },
     {
       path: '/shutters/wooden-stile',
       name: 'wooden-stile',
       component: ShutterWoodenStile,
-      meta: { title: 'plastic_stile' }
+      meta: { title: 'wooden_stile' }
     },
     {
       path: '/shutters/slats',
       name: 'slats',
       component: ShutterSlat,
-      meta: { title: 'wooden_stile' }
+      meta: { title: 'slats' }
     },
     {
       path: '/tailored',
