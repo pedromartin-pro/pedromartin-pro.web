@@ -3,7 +3,7 @@
     <div class="col-md-4">
       <div class="timeline-card">
         <div class="timeline-card-preview">
-          <img src="/images/shop/1.jpg" alt>
+          <img src="/images/machine1.jpg" alt>
         </div>
         <div class="timeline-card-body">
           <h4>{{ $t('cabinetmaker') }}</h4>
@@ -14,7 +14,7 @@
     <div class="col-md-4">
       <div class="timeline-card">
         <div class="timeline-card-preview">
-          <img src="/images/shop/1.jpg" alt>
+          <img src="/images/pino_de_soria.jpg" alt>
         </div>
         <div class="timeline-card-body">
           <h4>{{ $t('pine_wood') }}</h4>

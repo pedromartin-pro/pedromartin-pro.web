@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <section class="module-cover parallax text-center" data-background="images/module-2.jpg">
+    <section class="module-cover parallax text-center" data-background="/images/duruelo_header.jpg">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -14,7 +14,7 @@
           </div>
         </div>
       </div>
-      <div class="overlay-background" style="opacity: 0.6;"></div>
+      <div class="overlay-background" style="opacity: 0;"></div>
     </section>
 
     <!-- About-->
@@ -22,10 +22,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 m-auto">
-            <div class="space" data-m-y="-60px"></div>
             <div class="modal-video-container">
-              <img src="/images/shop/1.jpg" alt>
-              <a class="play-button" href="https://www.youtube.com/watch?v=0aCbYxJ9gus"></a>
+              <img src="/images/about_us_pedro_martin.jpg" alt="Pedro Martin">
             </div>
           </div>
         </div>
