@@ -1,21 +1,9 @@
 <template>
   <div class="wrapper">
-    <section class="module-cover parallax text-center" data-background="images/module-2.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>{{ $t('tailored') }}</h2>
-            <ol class="breadcrumb justify-content-center">
-              <li class="breadcrumb-item">
-                <router-link to="/">{{ $t('home') }}</router-link>
-              </li>
-              <li class="breadcrumb-item active">{{ $t('tailored') }}</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div class="overlay-background" style="opacity: 0.6;"></div>
-    </section>
+    <Jarallax
+      image="/images/home_header.jpg"
+      :name="$t('tailored')"
+    ></Jarallax>
 
     <section class="module p-b-20">
       <Tailored></Tailored>
@@ -63,11 +51,13 @@
 
 <script>
 import Tailored from '@/components/Tailored.vue'
+import Jarallax from "@/components/Jarallax.vue"
 
 export default {
   name: 'tailored',
   components: {
-    Tailored
+    Tailored,
+    Jarallax
   }
 }
 </script>

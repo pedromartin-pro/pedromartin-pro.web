@@ -12,7 +12,6 @@
             one_page_nav       = $('.onepage-nav'),
             parallax           = $('.parallax'),
             bloggrid           = $('.row-post-masonry'),
-            background         = $('[data-background], .slides-container li'),
             module_slides      = $('.module-cover-slides'),
             margin_y           = $('[data-mY]'),
             progress           = $('.progress-item'),
@@ -89,19 +88,6 @@
          * Setting background of modules
         /* ---------------------------------------------- */
 
-        background.each(function() {
-            if ($(this).attr('data-gradient') == 1) {
-                $(this).append('<div class="overlay-background overlay-gradient"></div>');
-                $(this).find('.overlay-background').css('opacity', $(this).attr('data-overlay'));
-            } else if ($(this).attr('data-overlay') > 0) {
-                $(this).append('<div class="overlay-background"></div>');
-                $(this).find('.overlay-background').css('opacity', $(this).attr('data-overlay'));
-            }
-        });
-
-        background.each(function() {
-            $(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
-        });
 
         margin_y.each(function() {
             $(this).css('margin-top', $(this).attr('data-mY') );
@@ -632,26 +618,6 @@
             $('html, body').animate({ scrollTop: 0 }, 'slow');
             return false;
         });
-
-        /* ---------------------------------------------- /*
-         * Parallax
-        /* ---------------------------------------------- */
-
-        var isIE = /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /Edge\/\d+/.test(navigator.userAgent);
-
-        if (isIE == true) {
-            var speed = 1;
-        } else {
-            var speed = 0.4;
-        }
-
-        var isMobile = /Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/g.test(navigator.userAgent || navigator.vendor || window.opera);
-
-        if (!isMobile) {
-            parallax.jarallax({
-                speed: speed,
-            });
-        }
 
     });
 

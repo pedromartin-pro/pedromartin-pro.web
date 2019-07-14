@@ -6,30 +6,25 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-        <h2>{{name}}</h2>
-        <ol class="breadcrumb justify-content-center">
-          <li class="breadcrumb-item">
-            <router-link to="/">{{ $t('home') }}</router-link>
-          </li>
-          <li class="breadcrumb-item">
-            <router-link :to="{ name: parentLink }">{{parent}}</router-link>
-          </li>
-          <li class="breadcrumb-item active">{{name}}</li>
-        </ol>
+          <h2>{{ name }}</h2>
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item">
+              <router-link to="/">{{ $t('home') }}</router-link>
+            </li>
+            <li class="breadcrumb-item active">{{ name }}</li>
+          </ol>
         </div>
       </div>
     </div>
-    <div class="overlay-background" style="opacity: 0.6;"></div>
+    <div class="overlay-background" style='opacity: 0.5;'></div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'productHeader',
+  name: "jarallax",
   props: {
     name: String,
-    parent: String,
-    parentLink: String,
     image: String
   },
   methods: {
@@ -65,5 +60,5 @@ export default {
       });
     }
   }
-}
+};
 </script>

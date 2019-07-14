@@ -1,21 +1,9 @@
 <template>
   <div class="wrapper">
-    <section class="module-cover parallax text-center" data-background="images/module-2.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>{{ $t('shutters') }}</h2>
-            <ol class="breadcrumb justify-content-center">
-              <li class="breadcrumb-item">
-                <router-link to="/">{{ $t('home') }}</router-link>
-              </li>
-              <li class="breadcrumb-item active">{{ $t('shutters') }}</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div class="overlay-background" style="opacity: 0.6;"></div>
-    </section>
+    <Jarallax
+      image="/images/home_header.jpg"
+      :name="$t('shutters')"
+    ></Jarallax>
 
     <section class="module">
       <div class="container">
@@ -81,11 +69,13 @@
 
 <script>
 import EndOfTheRoad from '@/components/EndOfTheRoad.vue'
+import Jarallax from "@/components/Jarallax.vue"
 
 export default {
   name: 'shutters',
   components: {
-    EndOfTheRoad
+    EndOfTheRoad,
+    Jarallax
   }
 }
 </script>

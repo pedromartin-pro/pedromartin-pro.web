@@ -4,7 +4,8 @@
       :name="t('plastic_stile')"
       :parent="t('shutters')"
       parentLink="shutters"
-    ></ProductHeader>
+      image="/images/home_header.jpg"
+   ></ProductHeader>
 
     <section class="module">
       <div class="container">

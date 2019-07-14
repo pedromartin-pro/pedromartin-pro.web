@@ -1,23 +1,9 @@
 <template>
   <div class="wrapper">
-    <!-- Hero-->
-    <section class="module-cover parallax text-center" data-background="assets/images/module-2.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>{{ $t('contact') }}</h2>
-            <ol class="breadcrumb justify-content-center">
-              <li class="breadcrumb-item">
-                <router-link to="/">{{ $t('home') }}</router-link>
-              </li>
-              <li class="breadcrumb-item active">{{ $t('contact') }}</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div class="overlay-background" style="opacity: 0.6;"></div>
-    </section>
-    <!-- Hero end-->
+    <Jarallax
+      image="/images/home_header.jpg"
+      :name="$t('contact')"
+    ></Jarallax>
 
     <!-- Services-->
     <section class="module p-b-20">
@@ -174,6 +160,8 @@
 </template>
 
 <script>
+import Jarallax from "@/components/Jarallax.vue"
+
 export default {
   name: 'contact',
   data () {
@@ -181,6 +169,9 @@ export default {
       center: { lat: 41.9521724, lng: -2.9276217 },
       zoom: 7
     }
+  },
+  components: {
+    Jarallax
   }
 }
 </script>

@@ -2,27 +2,7 @@
   <div class="home">
     <!-- Wrapper-->
     <div class="wrapper">
-      <!-- Hero-->
-      <section class="module-cover parallax text-center fullscreen" data-background="images/module-2.jpg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="m-b-20">{{ $t('wood_experts') }}
-              </h1>
-              <p class="m-b-40">
-                {{ $t('wood50_1') }}.<br>{{ $t('wood50_2') }}
-              </p>
-              <p>
-                <a class="btn btn-lg btn-circle btn-outline-new-white" href="#main-products">
-                  {{ $t('our_products') }}
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="overlay-background" style="opacity: 0.6;"></div>
-      </section>
-      <!-- Hero end-->
+      <HomeJarallax></HomeJarallax>
 
       <!-- Products-->
       <section id="main-products" class="module">
@@ -32,7 +12,7 @@
               <router-link to="/rods">
                 <div class="timeline-card">
                   <div class="timeline-card-preview">
-                    <img src="/images/shop/1.jpg" alt>
+                    <img src="/images/shop/1.jpg" alt />
                   </div>
                   <div class="timeline-card-body">
                     <h4>{{ $t('rod_or_rod') }}</h4>
@@ -46,7 +26,7 @@
               <router-link to="/shutters">
                 <div class="timeline-card">
                   <div class="timeline-card-preview">
-                    <img src="/images/shop/1.jpg" alt>
+                    <img src="/images/shop/1.jpg" alt />
                   </div>
                   <div class="timeline-card-body">
                     <h4>{{ $t('shutters') }}</h4>
@@ -71,6 +51,7 @@
           <div class="row">
             <div class="col-lg-6 col-md-9 m-auto text-center">
               <h1>{{ $t('our_work') }}</h1>
+              <br />
             </div>
           </div>
           <div class="row">
@@ -88,14 +69,16 @@
 </template>
 
 <script>
-import Tailored from '@/components/Tailored.vue'
-import OurWork from '@/components/OurWork.vue'
+import Tailored from "@/components/Tailored.vue"
+import OurWork from "@/components/OurWork.vue"
+import HomeJarallax from "@/components/HomeJarallax.vue"
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
     Tailored,
-    OurWork
+    OurWork,
+    HomeJarallax
   }
-}
+};
 </script>
