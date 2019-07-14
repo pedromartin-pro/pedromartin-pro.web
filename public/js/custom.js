@@ -9,28 +9,10 @@
     $(document).ready(function() {
 
         var header             = $('.header'),
-            one_page_nav       = $('.onepage-nav'),
-            parallax           = $('.parallax'),
-            bloggrid           = $('.row-post-masonry'),
-            module_slides      = $('.module-cover-slides'),
-            margin_y           = $('[data-mY]'),
-            progress           = $('.progress-item'),
-            counter_timer      = $('.counter-timer'),
-            pie_chart          = $('.chart'),
-            twitter_feed       = $('.twitter-feed'),
             stiky_sidebar      = $('.sticky-sidebar'),
             map                = $('.map'),
-            smoothscroll       = $('.smoothscroll'),
             play_btn           = $('.play-button'),
-            gallery_group      = $('.gallery-group'),
-            gallery            = $('.gallery'),
             shop_gallery       = $('.shop-single-item-popup'),
-            portfolio_carousel = $('.portfolio-carousel'),
-            shop_carousel      = $('.shop-carousel'),
-            clients_carousel   = $('.clients-carousel'),
-            review_slides      = $('.review-slides'),
-            review_carousel    = $('.review-carousel'),
-            image_slider       = $('.image-slider'),
             contact_form       = $('#contact-form');
 
         /* ---------------------------------------------- /*
@@ -43,21 +25,6 @@
             }
         });
 
-        /* ---------------------------------------------- /*
-         * One Page Nav
-        /* ---------------------------------------------- */
-
-        $('a', one_page_nav).filter(function() {
-            if ($(this).is(':not([href^="#"])')) {
-                $(this).addClass('external');
-            }
-        });
-
-        one_page_nav.singlePageNav({
-            filter:       ':not(.external)',
-            currentClass: 'active',
-            offset:       '58',
-        });
 
         /* ---------------------------------------------- /*
          * Header animation
@@ -73,25 +40,6 @@
                 header.removeClass('header-shadow');
             }
         }).scroll();
-
-        module_slides.each(function () {
-            $(this).superslides($.extend({
-                play:            10000,
-                animation:       'slide',
-                animation_speed: 800,
-                pagination:      true,
-                scrollable:      true,
-            }, $(this).data('module-cover-slides-options')));
-        });
-
-        /* ---------------------------------------------- /*
-         * Setting background of modules
-        /* ---------------------------------------------- */
-
-
-        margin_y.each(function() {
-            $(this).css('margin-top', $(this).attr('data-mY') );
-        });
 
         /* ---------------------------------------------- /*
          * Off-canvas
@@ -141,169 +89,6 @@
             }
         });
 
-        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -  /*
-        /* Portfolio masonry
-        /* - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-        var filters    = $('.filters'),
-            worksgrid = $('.row-portfolio');
-
-        $('a', filters).on('click', function() {
-            var selector = $(this).attr('data-filter');
-            $('.current', filters).removeClass('current');
-            $(this).addClass('current');
-            worksgrid.isotope({
-                filter: selector
-            });
-            return false;
-        });
-
-        $(window).on('resize', function() {
-            worksgrid.imagesLoaded(function() {
-                worksgrid.isotope({
-                    layoutMode: 'masonry',
-                    itemSelector: '.portfolio-item',
-                    transitionDuration: '0.4s',
-                    masonry: {
-                        columnWidth: '.grid-sizer',
-                    },
-                });
-            });
-        });
-
-        /* ---------------------------------------------- /*
-         * Blog masonry
-        /* ---------------------------------------------- */
-
-        $(window).on('resize', function() {
-            setTimeout(function() {
-                bloggrid.isotope({
-                    layoutMode: 'masonry',
-                    transitionDuration: '0.5s',
-                });
-            }, 1000);
-        }).resize();
-
-        /* ---------------------------------------------- /*
-         * Carousel/Sliders
-        /* ---------------------------------------------- */
-
-        image_slider.each(function () {
-            $(this).owlCarousel($.extend({
-                dots:       1,
-                nav:        1,
-                center:     1,
-                items:      1,
-                loop:       1,
-                autoHeight: 0,
-                margin:     0,
-                navText: [
-                    '<span class="ti-arrow-left"></span>',
-                    '<span class="ti-arrow-right"></span>'
-                ],
-            }, $(this).data('carousel-options')));
-        });
-
-        review_slides.each(function () {
-            $(this).owlCarousel($.extend({
-                autoplay:   5000,
-                nav:        1,
-                items:      1,
-                loop:       1,
-                navText: [
-                    '<span class="ti-arrow-left"></span>',
-                    '<span class="ti-arrow-right"></span>'
-                ],
-            }, $(this).data('carousel-options')));
-        });
-
-        review_carousel.each(function () {
-            $(this).owlCarousel($.extend({
-                nav:      0,
-                dots:     1,
-                autoplay: 1,
-                items:    1,
-                loop:     1,
-                margin:   30,
-                responsive: {
-                    768: {
-                        items: 2
-                    },
-                    1025: {
-                        items: 3
-                    }
-                },
-                navText: [
-                    '<span class="ti-angle-left"></span>',
-                    '<span class="ti-angle-right"></span>'
-                ],
-            }, $(this).data('carousel-options')));
-        });
-
-        clients_carousel.each(function () {
-            $(this).owlCarousel($.extend({
-                nav:      0,
-                dots:     1,
-                autoplay: 1,
-                items:    2,
-                loop:     1,
-                responsive: {
-                    768: {
-                        items: 4
-                    }
-                },
-                navText: [
-                    '<span class="ti-arrow-left"></span>',
-                    '<span class="ti-arrow-right"></span>'
-                ],
-            }, $(this).data('carousel-options')));
-        });
-
-        shop_carousel.each(function () {
-            $(this).owlCarousel($.extend({
-                nav:      0,
-                dots:     1,
-                autoplay: 1,
-                items:    1,
-                loop:     1,
-                margin:   30,
-                responsive: {
-                    768: {
-                        items: 2
-                    },
-                    1025: {
-                        items: 4
-                    }
-                },
-                navText: [
-                    '<span class="ti-angle-left"></span>',
-                    '<span class="ti-angle-right"></span>'
-                ],
-            }, $(this).data('carousel-options')));
-        });
-
-        portfolio_carousel.each(function () {
-            $(this).owlCarousel($.extend({
-                nav:      1,
-                dots:     0,
-                autoplay: 1,
-                items:    1,
-                loop:     1,
-                margin:   30,
-                responsive: {
-                    768: {
-                        items: 2
-                    },
-                    1025: {
-                        items: 4
-                    }
-                },
-                navText: [
-                    '<span class="ti-angle-left"></span>',
-                    '<span class="ti-angle-right"></span>'
-                ],
-            }, $(this).data('carousel-options')));
-        });
 
         /* ---------------------------------------------- /*
          * Popup
@@ -313,113 +98,18 @@
             type: 'iframe',
         });
 
-        gallery.magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0,1]
-            },
-            image: {
-                titleSrc: 'title',
-                tError: 'The image could not be loaded.',
-            }
-        });
-
-        gallery_group.each(function() {
-            $(this).magnificPopup({
-                delegate: 'a',
-                type: 'image',
-                gallery: {
-                    enabled: true,
-                    navigateByImgClick: true,
-                    preload: [0,1]
-                },
-                image: {
-                    titleSrc: 'title',
-                    tError: 'The image could not be loaded.',
-                }
-            })
-        });
-
-        shop_gallery.magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0,1]
-            },
-            image: {
-                titleSrc: 'title',
-                tError: 'The image could not be loaded.',
-            }
-        });
-
-        /* ---------------------------------------------- /*
-         * Progress bars, counters, pie charts animations
-        /* ---------------------------------------------- */
-
-        progress.each(function() {
-            $(this).appear(function() {
-                var percent = $(this).find('.progress-bar').attr('aria-valuenow');
-                $(this).find('.progress-bar').animate({'width' : percent + '%'});
-                $(this).find('.progress-number').countTo({
-                    from: 0,
-                    to: percent,
-                    speed: 900,
-                    refreshInterval: 30
-                });
-            });
-        });
-
-        counter_timer.each(function() {
-            $(this).appear(function() {
-                var number = $(this).find('strong').attr('data-to');
-                $(this).countTo({
-                    from:            0,
-                    to:              number,
-                    speed:           1500,
-                    refreshInterval: 10,
-                    formatter: function (number, options) {
-                        number = number.toFixed(options.decimals);
-                        number = number.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-                        return number;
-                    }
-                });
-            });
-        });
-
-        pie_chart.each(function() {
-            $(this).appear(function() {
-                $(this).easyPieChart($.extend({
-                    barColor:   '#000000',
-                    trackColor: '#eeeeee',
-                    scaleColor: false,
-                    lineCap:    'round',
-                    lineWidth:  3,
-                    size:       150,
-                }, $(this).data('chart-options')));
-            });
-        });
-
-        /* ---------------------------------------------- /*
-         * Twitter
-        /* ---------------------------------------------- */
-
-        twitter_feed.each(function (index) {
-            $(this).attr('id', 'twitter-' + index);
-            var twitterID      = $(this).data('twitter');
-            var twitterMax     = $(this).data('number');
-            var twitter_config = {
-                //'id':             twitterID,
-                "profile":        {"screenName": '' + twitterID + ''},
-                'domId':          'twitter-' + index,
-                'maxTweets':      twitterMax,
-                'enableLinks':    true,
-                'showPermalinks': false
-            };
-            twitterFetcher.fetch(twitter_config);
-        });
+        // shop_gallery.magnificPopup({
+        //     type: 'image',
+        //     gallery: {
+        //         enabled: true,
+        //         navigateByImgClick: true,
+        //         preload: [0,1]
+        //     },
+        //     image: {
+        //         titleSrc: 'title',
+        //         tError: 'The image could not be loaded.',
+        //     }
+        // });
 
         /* ---------------------------------------------- /*
          * Sticky Sidebar
@@ -450,7 +140,7 @@
          * A jQuery plugin for fluid width video embeds
         /* ---------------------------------------------- */
 
-        $('body').fitVids();
+        // $('body').fitVids();
 
         /* ---------------------------------------------- /*
          * Contact form ajax
@@ -589,18 +279,6 @@
             };
         });
 
-        /* ---------------------------------------------- /*
-         * Scroll Animation
-        /* ---------------------------------------------- */
-
-        smoothscroll.on('click', function(e) {
-            var target  = this.hash;
-            var $target = $(target);
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top - 58
-            }, 600, 'swing');
-            e.preventDefault();
-        });
 
         /* ---------------------------------------------- /*
          * Scroll top

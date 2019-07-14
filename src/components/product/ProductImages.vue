@@ -19,6 +19,21 @@ export default {
   props: {
     mainImage: String,
     images: Array
+  },
+  mounted: function () {
+    const el = $(this.$el)
+    el.find('.shop-single-item-popup').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1]
+        },
+        image: {
+            titleSrc: 'title',
+            tError: 'The image could not be loaded.',
+        }
+    });
   }
 }
 </script>
