@@ -84,7 +84,7 @@ section {
 body {
     margin: 0;
     font-family: "Poppins", Arial;
-    font-size: .875rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.8;
     color: #788487;
@@ -12261,7 +12261,7 @@ img.img-shadow,
     bottom: 1.5625rem;
     right: 1.5625rem;
     z-index: 999;
-    background: rgba(255, 255, 255, .9);
+    background: #ccc;
     height: 2.375rem;
     width: 2.375rem;
     line-height: 2.25rem;
@@ -12271,7 +12271,10 @@ img.img-shadow,
     box-shadow: 0 0 0 5px rgba(0, 0, 0, .05);
     transition: .5s all ease;
     transform: translateY(4.25rem);
-    color: #788487;
+}
+
+a.scroll-top {
+    color: #fff !important;
 }
 
 .scroll-top.scroll-top-visible {
@@ -12375,6 +12378,10 @@ img.img-shadow,
 
 .number-box .number-box-content > *:last-child {
     margin-bottom: 0;
+}
+
+.modal-video-container {
+    margin-top:-40px;
 }
 
 .modal-video-container {
