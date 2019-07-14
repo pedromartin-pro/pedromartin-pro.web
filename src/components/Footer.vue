@@ -11,14 +11,14 @@
               <div class="textwidget">
                 <p>
                   <a href="mailto:hola@pedromartin.pro">
-                    <span class="ti-email"> hola@pedromartin.pro</span>
+                    <i class="fas fa-envelope-square"></i> hola@pedromartin.pro
                   </a>
                   <br>
 
                   <span class="d-block d-lg-none">
-                    <a href="tel:+34975371XXX"><span class="ti-headphone-alt"> +34 975 371 XXX</span></a>
+                    <a href="tel:+34975371XXX"><i class="fas fa-phone"></i> +34 975 371 XXX</a>
                   </span>
-                  <span class="d-none d-lg-block"><span class="ti-headphone-alt"> +34 975 371 XXX</span></span>
+                  <span class="d-none d-lg-block"><i class="fas fa-phone"></i> +34 975 371 XXX</span>
                 </p>
                 <!-- <p>
                   O puedes escribirnos un mensaje en la <router-link to="/contact">página de contacto</router-link>.
@@ -29,7 +29,7 @@
           <div class="col-md-6">
             <aside class="widget widget-text">
               <div class="widget-title">
-                <h6>{{ $t('address') }}</h6>
+                <h6><i class="fas fa-map-marker-alt"></i> {{ $t('address') }}</h6>
               </div>
               <div class="textwidget">
                 <p>
