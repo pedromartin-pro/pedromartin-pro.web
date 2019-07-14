@@ -46,7 +46,7 @@
           <li class="nav-toggle">
             <a href="#" data-toggle="collapse" data-target=".inner-navigation">
               <span class="menu-item-span">
-                <i class="ti-menu"></i>
+                <i class="fas fa-bars"></i>
               </span>
             </a>
           </li>

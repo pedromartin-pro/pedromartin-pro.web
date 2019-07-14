@@ -17,7 +17,7 @@
           <div class="col-md-4">
             <div class="icon-box text-center">
               <div class="icon-box-icon">
-                <span class="ti-email"></span>
+                <i class="fas fa-envelope-square"></i>
               </div>
               <div class="icon-box-title">
                 <h6>
@@ -29,7 +29,7 @@
           <div class="col-md-4">
             <div class="icon-box text-center">
               <div class="icon-box-icon">
-                <span class="ti-headphone-alt"></span>
+                <i class="fas fa-phone"></i>
               </div>
               <div class="icon-box-title">
                 <h6 class="d-block d-lg-none">
@@ -42,7 +42,7 @@
           <div class="col-md-4">
             <div class="icon-box text-center">
               <div class="icon-box-icon">
-                <span class="ti-map-alt"></span>
+                <i class="fas fa-map-marker-alt"></i>
               </div>
               <div class="icon-box-title">
                 <h6>

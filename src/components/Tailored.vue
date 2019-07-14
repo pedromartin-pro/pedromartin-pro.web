@@ -10,7 +10,7 @@
         <div class="space" data-m-y="50px"></div>
         <div class="icon-box icon-box-left">
           <div class="icon-box-icon">
-            <span class="ti-layout"></span>
+            <i class="far fa-square"></i>
           </div>
           <div class="icon-box-title">
             <h6>{{ $t('planed_wood_4_faces') }}</h6>
@@ -21,7 +21,7 @@
         </div>
         <div class="icon-box icon-box-left">
           <div class="icon-box-icon">
-            <span class="ti-cup"></span>
+            <i class="fab fa-gg"></i>
           </div>
           <div class="icon-box-title">
             <h6>{{ $t('moulding_gap') }}</h6>
@@ -32,7 +32,7 @@
         </div>
         <div class="icon-box icon-box-left">
           <div class="icon-box-icon">
-            <span class="ti-harddrives"></span>
+            <i class="fas fa-eraser"></i>
           </div>
           <div class="icon-box-title">
             <h6>{{ $t('shaving') }}</h6>
