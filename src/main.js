@@ -5,6 +5,7 @@ import store from './store'
 import './registerServiceWorker'
 import i18n from './i18n'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import VueAnalytics from 'vue-ua'
 
 Vue.config.productionTip = false
 
@@ -15,6 +16,13 @@ Vue.use(VueGoogleMaps, {
   load: {
     key: mapsApiKey
   }
+})
+
+Vue.use(VueAnalytics, {
+  appName: 'pedromartin.pro',
+  appVersion: '0.1.0',
+  trackingId: 'UA-69860247-2',
+  vueRouter: router
 })
 
 new Vue({
