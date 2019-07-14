@@ -27,33 +27,33 @@
 
 <script>
 export default {
-  name: "homejarallax",
-  mounted: function() {
-    const el = $(this.$el);
+  name: 'homejarallax',
+  mounted: function () {
+    const el = $(this.$el)
 
-    if (el.attr("data-overlay") > 0) {
-      $(".overlay-background").css("opacity", el.attr("data-overlay"));
+    if (el.attr('data-overlay') > 0) {
+      $('.overlay-background').css('opacity', el.attr('data-overlay'))
     }
 
     const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/g.test(
       navigator.userAgent || navigator.vendor || window.opera
-    );
+    )
     if (!isMobile) {
       const isIE =
         /MSIE 9/i.test(navigator.userAgent) ||
         /rv:11.0/i.test(navigator.userAgent) ||
         /MSIE 10/i.test(navigator.userAgent) ||
-        /Edge\/\d+/.test(navigator.userAgent);
+        /Edge\/\d+/.test(navigator.userAgent)
 
-      let speed = 0.4;
-      if (isIE == true) {
-        speed = 1;
+      let speed = 0.4
+      if (isIE) {
+        speed = 1
       }
 
       el.jarallax({
         speed: speed
-      });
+      })
     }
   }
-};
+}
 </script>

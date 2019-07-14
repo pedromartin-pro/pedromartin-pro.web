@@ -30,7 +30,7 @@
 
 <script>
 import OurWork from '@/components/OurWork.vue'
-import Jarallax from "@/components/Jarallax.vue"
+import Jarallax from '@/components/Jarallax.vue'
 
 export default {
   name: 'home',

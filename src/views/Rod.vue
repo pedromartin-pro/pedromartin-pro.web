@@ -52,7 +52,7 @@
 
 <script>
 import EndOfTheRoad from '@/components/EndOfTheRoad.vue'
-import Jarallax from "@/components/Jarallax.vue"
+import Jarallax from '@/components/Jarallax.vue'
 
 export default {
   name: 'rods',

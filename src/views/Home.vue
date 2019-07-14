@@ -67,16 +67,16 @@
 </template>
 
 <script>
-import Tailored from "@/components/Tailored.vue"
-import OurWork from "@/components/OurWork.vue"
-import HomeJarallax from "@/components/HomeJarallax.vue"
+import Tailored from '@/components/Tailored.vue'
+import OurWork from '@/components/OurWork.vue'
+import HomeJarallax from '@/components/HomeJarallax.vue'
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     Tailored,
     OurWork,
     HomeJarallax
   }
-};
+}
 </script>

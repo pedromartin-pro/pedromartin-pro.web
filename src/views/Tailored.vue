@@ -46,13 +46,11 @@
 </template>
 
 <script>
-import Tailored from '@/components/Tailored.vue'
-import Jarallax from "@/components/Jarallax.vue"
+import Jarallax from '@/components/Jarallax.vue'
 
 export default {
   name: 'tailored',
   components: {
-    Tailored,
     Jarallax
   }
 }

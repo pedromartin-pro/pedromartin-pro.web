@@ -160,7 +160,7 @@
 </template>
 
 <script>
-import Jarallax from "@/components/Jarallax.vue"
+import Jarallax from '@/components/Jarallax.vue'
 
 export default {
   name: 'contact',
