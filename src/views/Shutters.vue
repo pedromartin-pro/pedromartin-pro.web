@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <Jarallax
-      image="/images/home_header.jpg"
+      image="/images/shutters.jpg"
       :name="$t('shutters')"
     ></Jarallax>
 
@@ -12,7 +12,7 @@
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
                 <router-link to="/shutters/plastic-stile">
-                  <img src="/images/shop/1.jpg" alt>
+                  <img src="/images/wood.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
@@ -29,7 +29,7 @@
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
                 <router-link to="/shutters/wooden-stile">
-                  <img src="/images/shop/1.jpg" alt>
+                  <img src="/images/shutters2.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
@@ -46,7 +46,7 @@
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
                 <router-link to="/shutters/slats">
-                  <img src="/images/shop/1.jpg" alt>
+                  <img src="/images/shutters3.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>

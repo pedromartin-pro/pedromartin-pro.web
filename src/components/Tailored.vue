@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <img src="/images/shop/1.jpg" alt />
+        <img src="/images/tailored2.jpg" alt />
       </div>
       <div class="col-lg-5 offset-lg-1">
         <h2>{{ $t('tailored') }}.</h2>

@@ -12,12 +12,11 @@
               <router-link to="/rods">
                 <div class="timeline-card">
                   <div class="timeline-card-preview">
-                    <img src="/images/shop/1.jpg" alt />
+                    <img src="/images/rods.jpg" alt />
                   </div>
                   <div class="timeline-card-body">
                     <h4>{{ $t('rod_or_rod') }}</h4>
                     <p>{{ $t('rod_or_rod_explained') }}.</p>
-                    <p class="blue-link">{{ $t('show_rod_options') }}</p>
                   </div>
                 </div>
               </router-link>
@@ -26,12 +25,11 @@
               <router-link to="/shutters">
                 <div class="timeline-card">
                   <div class="timeline-card-preview">
-                    <img src="/images/shop/1.jpg" alt />
+                    <img src="/images/shutters.jpg" alt />
                   </div>
                   <div class="timeline-card-body">
                     <h4>{{ $t('shutters') }}</h4>
                     <p>{{ $t('shutters_explained') }}.</p>
-                    <p class="blue-link">{{ $t('show_shutters_options') }}</p>
                   </div>
                 </div>
               </router-link>

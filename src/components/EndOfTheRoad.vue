@@ -6,33 +6,31 @@
           <h1>{{ $t('find_looking_for') }}</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="space" data-m-y="60px"></div>
-        </div>
-      </div>
+
+      <br>
+
       <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="feature">
+        <div class="col-md-5">
+          <div class="timeline-card">
             <router-link to="/tailored">
-              <div class="feature-thumb">
-                <img src="/images/shop/1.jpg" alt />
+              <div class="timeline-card-preview">
+                <img src="/images/tailored.jpg" alt>
               </div>
-              <div class="feature-content">
-                <h6>{{ $t('tailored') }}</h6>
+              <div class="timeline-card-body">
+                <h4>{{ $t('tailored') }}</h4>
                 <p>{{ $t('tailored_explained') }}.</p>
               </div>
             </router-link>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="feature">
+        <div class="col-md-5">
+          <div class="timeline-card">
             <router-link to="/contact">
-              <div class="feature-thumb">
-                <img src="/images/shop/1.jpg" alt />
+              <div class="timeline-card-preview">
+                <img src="/images/art.jpg" alt>
               </div>
-              <div class="feature-content">
-                <h6>{{ $t('contact_us') }}</h6>
+              <div class="timeline-card-body">
+                <h4>{{ $t('contact_us') }}</h4>
                 <p>{{ $t('contact_us_explained') }}.</p>
               </div>
             </router-link>

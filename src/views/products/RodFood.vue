@@ -12,8 +12,8 @@
         <div class="row">
           <div class="col-lg-9">
             <ProductImages
-              mainImage="/images/shop/1.jpg"
-              :images="['/images/shop/1.jpg', '/images/shop/1.jpg', '/images/shop/1.jpg']"
+              mainImage="/images/rods.jpg"
+              :images="['/images/rods1.jpg', '/images/rods3.jpg', '/images/rods2.jpg']"
             ></ProductImages>
           </div>
           <div class="col-lg-3 bg-gray">

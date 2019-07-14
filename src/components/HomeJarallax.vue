@@ -1,7 +1,7 @@
 <template>
   <section
     class="module-cover parallax fullscreen text-center"
-    style='background-image: url("/images/home_header.jpg");'
+    style='background-image: url("/images/pineforest.jpg");'
   >
     <div class="container">
       <div class="row">

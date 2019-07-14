@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <Jarallax
-      image="/images/home_header.jpg"
+      image="/images/outdoors.jpg"
       :name="$t('contact')"
     ></Jarallax>
 
@@ -57,7 +57,7 @@
     <!-- Services end-->
 
     <!-- Form-->
-    <section class="module divider-top">
+    <!-- <section class="module divider-top">
       <div class="container">
         <div class="row p-b-40">
           <div class="col-lg-6 col-md-9 m-auto text-center">
@@ -148,7 +148,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Form end-->
 
     <section id="map" class="maps-container">

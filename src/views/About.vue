@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <Jarallax
-      image="/images/home_header.jpg"
+      image="/images/duruelo_de_la_sierra.jpg"
       :name="$t('about_us')"
     ></Jarallax>
 

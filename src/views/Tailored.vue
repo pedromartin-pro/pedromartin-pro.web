@@ -1,13 +1,9 @@
 <template>
   <div class="wrapper">
     <Jarallax
-      image="/images/home_header.jpg"
+      image="/images/machine1.jpg"
       :name="$t('tailored')"
     ></Jarallax>
-
-    <section class="module p-b-20">
-      <Tailored></Tailored>
-    </section>
 
     <section class="module">
       <div class="container">
