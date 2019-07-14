@@ -56,7 +56,7 @@ export default {
         /Edge\/\d+/.test(navigator.userAgent)
 
       let speed = 0.4
-      if (isIE == true) {
+      if (isIE) {
         speed = 1
       }
 
