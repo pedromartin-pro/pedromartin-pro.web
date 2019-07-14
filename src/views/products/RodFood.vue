@@ -4,7 +4,7 @@
       :name="t('rod_food')"
       :parent="t('rods')"
       parentLink="rods"
-      image="/images/home_header.jpg"
+      image="/images/rods3.jpg"
     ></ProductHeader>
 
     <section class="module">
