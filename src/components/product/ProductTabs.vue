@@ -31,8 +31,8 @@
                     <th>{{ $t('info') }}</th>
                   </tr>
                   <tr v-for="option in options">
-                    <th>{{option.title}}</th>
-                    <th>{{option.value}}</th>
+                    <td>{{option.title}}</td>
+                    <td>{{option.value}}</td>
                   </tr>
                 </tbody>
               </table>

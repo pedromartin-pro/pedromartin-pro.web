@@ -26,8 +26,8 @@
 
     <section class="module p-t-0">
       <ProductTabs
-        :description="t('rod_food')"
-        :options="[{title:'op1', value:'val1'}, {title:'op2', value:'val2'}]"
+        :description="t('rod_food_extended')"
+        :options="[{title:t('types'), value:t('rod_food_types')}, {title:t('sizes'), value:t('rod_food_sizes')}, {title:t('wood'), value:t('pine')}, {title:t('painted'), value:t('no')}]"
       ></ProductTabs>
     </section>
 

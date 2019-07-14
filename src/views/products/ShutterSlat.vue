@@ -26,8 +26,8 @@
 
     <section class="module p-t-0">
       <ProductTabs
-        :description="t('slats')"
-        :options="[{title:'op1', value:'val1'}, {title:'op2', value:'val2'}]"
+        :description="t('slats_extended')"
+        :options="[{title:t('types'), value:t('slats_types')}, {title:t('sizes'), value:t('slats_sizes')}, {title:t('wood'), value:t('pine')}, {title:t('painted'), value:t('no')}]"
       ></ProductTabs>
     </section>
 
