@@ -33,9 +33,9 @@
               </div>
               <div class="icon-box-title">
                 <h6 class="d-block d-lg-none">
-                  <a href="tel:+34975371XXX">+34 975 371 XXX</a>
+                  <a href="tel:+34627534662">+34 627534662</a>
                 </h6>
-                <h6 class="d-none d-lg-block">+34 975 371 XXX</h6>
+                <h6 class="d-none d-lg-block">+34 627534662</h6>
               </div>
             </div>
           </div>

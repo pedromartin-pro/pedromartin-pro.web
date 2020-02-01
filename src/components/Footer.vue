@@ -16,9 +16,9 @@
                   <br>
 
                   <span class="d-block d-lg-none">
-                    <a href="tel:+34975371XXX"><i class="fas fa-phone"></i> +34 975 371 XXX</a>
+                    <a href="tel:+34627534662"><i class="fas fa-phone"></i> +34 627534662</a>
                   </span>
-                  <span class="d-none d-lg-block"><i class="fas fa-phone"></i> +34 975 371 XXX</span>
+                  <span class="d-none d-lg-block"><i class="fas fa-phone"></i> +34 627534662</span>
                 </p>
                 <!-- <p>
                   O puedes escribirnos un mensaje en la <router-link to="/contact">página de contacto</router-link>.
