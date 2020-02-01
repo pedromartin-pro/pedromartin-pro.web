@@ -151,7 +151,7 @@
     </section> -->
     <!-- Form end-->
 
-    <section id="map" class="maps-container">
+    <section id="map" class="maps-container col-lg-10 offset-lg-1 col-sm-8 offset-sm-2">
       <gmap-map class="map" :center="center" :zoom="zoom">
         <gmap-marker :position="center" :clickable="true" :draggable="true" :icon="{ url: require('../../public/images/map-icon.png')}"></gmap-marker>
       </gmap-map>

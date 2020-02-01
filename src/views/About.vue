@@ -13,6 +13,7 @@
             <div class="modal-video-container">
               <img src="/images/about_us_pedro_martin.jpg" alt="Pedro Martin">
             </div>
+            <p>{{ $t('pedro_martin') }}</p>
           </div>
         </div>
       </div>
