@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
   name: 'productHeader',
   props: {
