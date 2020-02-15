@@ -1,23 +1,22 @@
-import i18n from './i18n'
-
 import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Rod from './views/Rod.vue'
-import Shutters from './views/Shutters.vue'
-import Tailored from './views/Tailored.vue'
-import About from './views/About.vue'
-import Contact from './views/Contact.vue'
-import Error404 from './views/Error404.vue'
-import RodFood from './views/products/RodFood.vue'
-import RodPyrotechnics from './views/products/RodPyrotechnics.vue'
-import ShutterPlasticStile from './views/products/ShutterPlasticStile.vue'
-import ShutterWoodenStile from './views/products/ShutterWoodenStile.vue'
-import ShutterSlat from './views/products/ShutterSlat.vue'
+import VueRouter from 'vue-router'
+import i18n from '@/i18n'
+import Home from '@/views/Home.vue'
+import Rod from '@/views/Rod.vue'
+import Shutters from '@/views/Shutters.vue'
+import Tailored from '@/views/Tailored.vue'
+import About from '@/views/About.vue'
+import Contact from '@/views/Contact.vue'
+import Error404 from '@/views/Error404.vue'
+import RodFood from '@/views/products/RodFood.vue'
+import RodPyrotechnics from '@/views/products/RodPyrotechnics.vue'
+import ShutterPlasticStile from '@/views/products/ShutterPlasticStile.vue'
+import ShutterWoodenStile from '@/views/products/ShutterWoodenStile.vue'
+import ShutterSlat from '@/views/products/ShutterSlat.vue'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-const router = new Router({
+const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [

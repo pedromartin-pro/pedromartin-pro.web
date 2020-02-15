@@ -1,6 +1,6 @@
 {
   "name": "pedromartin-pro",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,26 +10,27 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
-    "core-js": "^2.6.11",
-    "register-service-worker": "^1.6.2",
     "vue": "^2.6.11",
     "vue-i18n": "^8.15.3",
     "vue-router": "^3.1.5",
+    "vue-ua": "^1.7.0",
     "vue2-google-maps": "^0.10.7",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.3.0",
-    "@vue/cli-plugin-babel": "^3.12.1",
-    "@vue/cli-plugin-eslint": "^3.12.1",
-    "@vue/cli-plugin-pwa": "^3.12.1",
-    "@vue/cli-service": "^3.12.1",
-    "@vue/eslint-config-standard": "^4.0.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-plugin-router": "~4.2.0",
+    "@vue/cli-plugin-vuex": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-standard": "^5.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.1.2",
     "vue-cli-plugin-i18n": "^0.6.1",
-    "vue-template-compiler": "^2.6.11",
-    "vue-ua": "^1.7.0"
+    "vue-template-compiler": "^2.6.11"
   }
 }
