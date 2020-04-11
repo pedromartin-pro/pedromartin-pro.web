@@ -6,6 +6,8 @@ import i18n from './i18n'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import VueAnalytics from 'vue-ua'
 
+import { version } from '../package'
+
 Vue.config.productionTip = false
 
 let mapsApiKey = 'AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q'
@@ -30,3 +32,5 @@ new Vue({
   i18n,
   render: h => h(App)
 }).$mount('#app')
+
+console.log(`App version: ${version}`)
