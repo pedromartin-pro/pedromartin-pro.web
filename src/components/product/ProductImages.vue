@@ -14,8 +14,6 @@
 </template>
 
 <script>
-import $ from 'jquery'
-
 export default {
   name: 'productImages',
   props: {
