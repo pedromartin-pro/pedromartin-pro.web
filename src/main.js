@@ -33,4 +33,5 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
+// eslint-disable-next-line
 console.log(`App version: ${version}`)
