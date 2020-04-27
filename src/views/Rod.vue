@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <Jarallax
-      image="/images/rods.jpg"
+      image="/images/varillas.jpg"
       :name="$t('rods')"
     ></Jarallax>
 
@@ -11,15 +11,15 @@
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <router-link to="/rods/food">
-                  <img src="/images/rods3.jpg" alt>
+                <router-link to="/varillas/alimentacion">
+                  <img src="/images/varillas3.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <router-link to="/rods/food">
+                <router-link to="/varillas/alimentacion">
                   <h6 class="shop-item-title">{{ $t('rod_food') }}</h6>
                 </router-link>
               </div>
@@ -28,15 +28,15 @@
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <router-link to="/rods/pyrotechnics">
-                  <img src="/images/rods1.jpg" alt>
+                <router-link to="/varillas/pirotecnia">
+                  <img src="/images/varillas1.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <router-link to="/rods/pyrotechnics">
+                <router-link to="/varillas/pirotecnia">
                   <h6 class="shop-item-title">{{ $t('rod_pyro') }}</h6>
                 </router-link>
               </div>

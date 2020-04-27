@@ -1,7 +1,6 @@
 <template>
   <section
     class="module-cover parallax fullscreen text-center"
-    style='background-image: url("/images/pineforest.jpg");'
   >
     <div class="container">
       <div class="row">
@@ -57,3 +56,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  section {
+    background-image: url("/images/pinar.jpg");
+  }
+</style>

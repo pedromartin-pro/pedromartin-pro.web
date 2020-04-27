@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-md-10 m-auto">
             <div class="modal-video-container">
-              <img src="/images/about_us_pedro_martin.jpg" alt="Pedro Martin">
+              <img src="/images/pedro_martin.jpg" alt="Pedro Martin">
             </div>
             <p>{{ $t('pedro_martin') }}</p>
           </div>

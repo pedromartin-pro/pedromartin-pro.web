@@ -9,10 +9,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <router-link to="/rods">
+              <router-link to="/varillas">
                 <div class="timeline-card">
                   <div class="timeline-card-preview">
-                    <img src="/images/rods.jpg" alt />
+                    <img src="/images/varillas.jpg" alt />
                   </div>
                   <div class="timeline-card-body">
                     <h4>{{ $t('rod_or_rod') }}</h4>
@@ -22,10 +22,10 @@
               </router-link>
             </div>
             <div class="col-md-6">
-              <router-link to="/shutters">
+              <router-link to="/persianas">
                 <div class="timeline-card">
                   <div class="timeline-card-preview">
-                    <img src="/images/shutters.jpg" alt />
+                    <img src="/images/persianas.jpg" alt />
                   </div>
                   <div class="timeline-card-body">
                     <h4>{{ $t('shutters') }}</h4>
