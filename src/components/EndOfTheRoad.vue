@@ -12,9 +12,9 @@
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div class="timeline-card">
-            <router-link to="/tailored">
+            <router-link to="/a-medida">
               <div class="timeline-card-preview">
-                <img src="/images/tailored.jpg" alt>
+                <img src="/images/a-medida.jpg" alt>
               </div>
               <div class="timeline-card-body">
                 <h4>{{ $t('tailored') }}</h4>
@@ -25,9 +25,9 @@
         </div>
         <div class="col-md-5">
           <div class="timeline-card">
-            <router-link to="/contact">
+            <router-link to="/contacto">
               <div class="timeline-card-preview">
-                <img src="/images/art.jpg" alt>
+                <img src="/images/arte.jpg" alt>
               </div>
               <div class="timeline-card-body">
                 <h4>{{ $t('contact_us') }}</h4>

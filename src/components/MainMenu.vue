@@ -10,27 +10,27 @@
         <div class="inner-nav">
           <ul>
             <li>
-              <router-link to="/rods">
+              <router-link to="/varillas">
                 <span class="menu-item-span">{{ $t('rods') }}</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/shutters">
+              <router-link to="/persianas">
                 <span class="menu-item-span">{{ $t('shutters') }}</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/tailored">
+              <router-link to="/a-medida">
                 <span class="menu-item-span">{{ $t('tailored') }}</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/about">
+              <router-link to="/sobre-nostros">
                 <span class="menu-item-span">{{ $t('about_us') }}</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/contact">
+              <router-link to="/contacto">
                 <span class="menu-item-span">{{ $t('contact') }}</span>
               </router-link>
             </li>
@@ -39,10 +39,10 @@
       </div>
       <div class="extra-nav">
         <ul>
-          <li><a v-on:click="changeLanguage('es')" class="top-bar-cart"><img src="/images/icons/es.png" class="menu-item-span" width="16"></a></li>
-          <li><a v-on:click="changeLanguage('en')" class="top-bar-cart"><img src="/images/icons/en.png" class="menu-item-span" width="16"></a></li>
-          <!-- <li><a v-on:click="changeLanguage('it')" class="top-bar-cart"><img src="/images/icons/it.png" class="menu-item-span" width="16"></a></li>
-          <li><a v-on:click="changeLanguage('pt')" class="top-bar-cart"><img src="/images/icons/pt.png" class="menu-item-span" width="16"></a></li> -->
+          <li><a v-on:click="changeLanguage('es')" class="top-bar-cart"><img src="@/assets/icons/es.png" class="menu-item-span" width="16"></a></li>
+          <li><a v-on:click="changeLanguage('en')" class="top-bar-cart"><img src="@/assets/icons/en.png" class="menu-item-span" width="16"></a></li>
+          <!-- <li><a v-on:click="changeLanguage('it')" class="top-bar-cart"><img src="@/assets/icons/it.png" class="menu-item-span" width="16"></a></li>
+          <li><a v-on:click="changeLanguage('pt')" class="top-bar-cart"><img src="@/assets/icons/pt.png" class="menu-item-span" width="16"></a></li> -->
           <li class="nav-toggle">
             <a href="#" data-toggle="collapse" data-target=".inner-navigation">
               <span class="menu-item-span">

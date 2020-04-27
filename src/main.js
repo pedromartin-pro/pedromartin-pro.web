@@ -10,12 +10,9 @@ import { version } from '../package'
 
 Vue.config.productionTip = false
 
-let mapsApiKey = 'AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q'
-if (process.env.NODE_ENV === 'production') { mapsApiKey = 'AIzaSyBbEngXyVxlkJ__3PP1aHH1j_iH4Z6OphI' }
-
 Vue.use(VueGoogleMaps, {
   load: {
-    key: mapsApiKey
+    key: process.env.VUE_APP_GOOGLE_API_KEY
   }
 })
 

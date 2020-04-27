@@ -27,61 +27,61 @@ const router = new VueRouter({
       meta: { title: 'wood_experts' }
     },
     {
-      path: '/rods',
+      path: '/varillas',
       name: 'rods',
       component: Rod,
       meta: { title: 'rods' }
     },
     {
-      path: '/rods/food',
+      path: '/varillas/alimentacion',
       name: 'food-rods',
       component: RodFood,
       meta: { title: 'rod_food' }
     },
     {
-      path: '/rods/pyrotechnics',
-      name: 'food-pyrotechnics',
+      path: '/varillas/pirotecnia',
+      name: 'food-pirotecnia',
       component: RodPyrotechnics,
       meta: { title: 'rod_pyro' }
     },
     {
-      path: '/shutters',
+      path: '/persianas',
       name: 'shutters',
       component: Shutters,
       meta: { title: 'shutters' }
     },
     {
-      path: '/shutters/plastic-stile',
+      path: '/persianas/montante-enfundar',
       name: 'plastic-stile',
       component: ShutterPlasticStile,
       meta: { title: 'plastic_stile' }
     },
     {
-      path: '/shutters/wooden-stile',
+      path: '/persianas/montante-remate',
       name: 'wooden-stile',
       component: ShutterWoodenStile,
       meta: { title: 'wooden_stile' }
     },
     {
-      path: '/shutters/slats',
+      path: '/persianas/lamas',
       name: 'slats',
       component: ShutterSlat,
       meta: { title: 'slats' }
     },
     {
-      path: '/tailored',
+      path: '/a-medida',
       name: 'tailored',
       component: Tailored,
       meta: { title: 'tailored' }
     },
     {
-      path: '/about',
+      path: '/sobre-nostros',
       name: 'about',
       component: About,
       meta: { title: 'about_us' }
     },
     {
-      path: '/contact',
+      path: '/contacto',
       name: 'contact',
       component: Contact,
       meta: { title: 'contact' }

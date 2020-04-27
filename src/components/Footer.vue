@@ -21,7 +21,7 @@
                   <span class="d-none d-lg-block"><i class="fas fa-phone"></i> +34 627534662</span>
                 </p>
                 <!-- <p>
-                  O puedes escribirnos un mensaje en la <router-link to="/contact">página de contacto</router-link>.
+                  O puedes escribirnos un mensaje en la <router-link to="/contacto">página de contacto</router-link>.
                 </p> -->
               </div>
             </aside>

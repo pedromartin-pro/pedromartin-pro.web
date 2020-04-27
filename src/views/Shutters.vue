@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <Jarallax
-      image="/images/shutters.jpg"
+      image="/images/persianas.jpg"
       :name="$t('shutters')"
     ></Jarallax>
 
@@ -11,15 +11,15 @@
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <router-link to="/shutters/plastic-stile">
-                  <img src="/images/wood.jpg" alt>
+                <router-link to="/persianas/montante-enfundar">
+                  <img src="/images/madera.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <router-link to="/shutters/plastic-stile">
+                <router-link to="/persianas/montante-enfundar">
                   <h6 class="shop-item-title">{{ $t('plastic_stile') }}</h6>
                 </router-link>
               </div>
@@ -28,15 +28,15 @@
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <router-link to="/shutters/wooden-stile">
-                  <img src="/images/shutters2.jpg" alt>
+                <router-link to="/persianas/montante-remate">
+                  <img src="/images/persianas2.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <router-link to="/shutters/wooden-stile">
+                <router-link to="/persianas/montante-remate">
                   <h6 class="shop-item-title">{{ $t('wooden_stile') }}</h6>
                 </router-link>
               </div>
@@ -45,15 +45,15 @@
           <div class="col-md-6">
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
-                <router-link to="/shutters/slats">
-                  <img src="/images/shutters3.jpg" alt>
+                <router-link to="/persianas/lamas">
+                  <img src="/images/persianas3.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
                   <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
                 </div>
               </div>
               <div class="shop-item-captions">
-                <router-link to="/shutters/slats">
+                <router-link to="/persianas/lamas">
                   <h6 class="shop-item-title">{{ $t('slats') }}</h6>
                 </router-link>
               </div>

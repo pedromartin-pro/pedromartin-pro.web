@@ -4,7 +4,7 @@
       :name="t('rod_food')"
       :parent="t('rods')"
       parentLink="rods"
-      image="/images/rods3.jpg"
+      image="/images/varillas3.jpg"
     ></ProductHeader>
 
     <section class="module">
@@ -12,8 +12,8 @@
         <div class="row">
           <div class="col-lg-9">
             <ProductImages
-              mainImage="/images/rods.jpg"
-              :images="['/images/rods1.jpg', '/images/rods3.jpg']"
+              mainImage="/images/varillas.jpg"
+              :images="['/images/varillas1.jpg', '/images/varillas3.jpg']"
             ></ProductImages>
           </div>
           <div class="col-lg-3 bg-gray">

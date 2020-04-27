@@ -30,7 +30,7 @@
                     <th>{{ $t('title') }}</th>
                     <th>{{ $t('info') }}</th>
                   </tr>
-                  <tr v-for="option in options" v-bind:key="option">
+                  <tr v-for="(option, idx) in options" v-bind:key="idx">
                     <td>{{option.title}}</td>
                     <td>{{option.value}}</td>
                   </tr>
