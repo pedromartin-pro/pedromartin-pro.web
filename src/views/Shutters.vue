@@ -15,7 +15,7 @@
                   <img src="/images/madera.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
+                  <router-link class="btn btn-new-white" to="/persianas/montante-enfundar">{{ $t('show_product') }}</router-link>
                 </div>
               </div>
               <div class="shop-item-captions">
@@ -32,7 +32,7 @@
                   <img src="/images/persianas2.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
+                  <router-link class="btn btn-new-white" to="/persianas/montante-remate">{{ $t('show_product') }}</router-link>
                 </div>
               </div>
               <div class="shop-item-captions">
@@ -49,7 +49,7 @@
                   <img src="/images/persianas3.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
+                  <router-link class="btn btn-new-white" to="/persianas/lamas">{{ $t('show_product') }}</router-link>
                 </div>
               </div>
               <div class="shop-item-captions">

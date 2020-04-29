@@ -13,7 +13,7 @@
           <div class="col-lg-9">
             <ProductImages
               mainImage="/images/varillas.jpg"
-              :images="['/images/varillas1.jpg', '/images/varillas3.jpg']"
+              :images="['/images/varillas1.jpg', '/images/varillas2.jpg', '/images/varillas4.jpg', '/images/varillas5.jpg', '/images/varillas6.jpg']"
             ></ProductImages>
           </div>
           <div class="col-lg-3 bg-gray">

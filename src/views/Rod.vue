@@ -12,10 +12,10 @@
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
                 <router-link to="/varillas/alimentacion">
-                  <img src="/images/varillas3.jpg" alt>
+                  <img src="/images/varillas6.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
+                  <router-link class="btn btn-new-white" to="/varillas/alimentacion">{{ $t('show_product') }}</router-link>
                 </div>
               </div>
               <div class="shop-item-captions">
@@ -29,10 +29,10 @@
             <div class="shop-grid-item">
               <div class="shop-item-thumb">
                 <router-link to="/varillas/pirotecnia">
-                  <img src="/images/varillas1.jpg" alt>
+                  <img src="/images/varillas2.jpg" alt>
                 </router-link>
                 <div class="shop-item-hidden">
-                  <a class="btn btn-new-white" href="#">{{ $t('show_product') }}</a>
+                  <router-link class="btn btn-new-white" to="/varillas/pirotecnia">{{ $t('show_product') }}</router-link>
                 </div>
               </div>
               <div class="shop-item-captions">
