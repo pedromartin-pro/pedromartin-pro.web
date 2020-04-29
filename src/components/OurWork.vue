@@ -3,7 +3,7 @@
     <div class="col-md-4">
       <div class="feature">
         <div class="feature-thumb">
-          <img src="/images/a-medida.jpg" alt />
+          <img src="/images/cepilladora_600.jpg" alt />
         </div>
         <div class="feature-content">
           <h4>{{ $t('cabinetmaker') }}</h4>
@@ -14,7 +14,7 @@
     <div class="col-md-4">
       <div class="feature">
         <div class="feature-thumb">
-          <img src="/images/pino_de_soria.jpg" alt />
+          <img src="/images/pino_de_soria_600.jpg" alt />
         </div>
         <div class="feature-content">
           <h4>{{ $t('pine_wood') }}</h4>
@@ -25,7 +25,7 @@
     <div class="col-md-4">
       <div class="feature">
         <div class="feature-thumb">
-          <img src="/images/persianas3.jpg" alt />
+          <img src="/images/persianas3_600.jpg" alt />
         </div>
         <div class="feature-content">
           <h4>{{ $t('quality_price') }}</h4>

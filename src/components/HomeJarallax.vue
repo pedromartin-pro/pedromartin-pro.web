@@ -58,7 +58,15 @@ export default {
 </script>
 
 <style scoped>
-  section {
-    background-image: url("/images/pinar.jpg");
+  @media screen and (min-width: 961px) {
+    section {
+      background-image: url("/images/pinar.jpg");
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    section {
+      background-image: url("/images/pinar_960.jpg");
+    }
   }
 </style>

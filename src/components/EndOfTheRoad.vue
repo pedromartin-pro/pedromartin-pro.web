@@ -14,7 +14,7 @@
           <div class="timeline-card">
             <router-link to="/a-medida">
               <div class="timeline-card-preview">
-                <img src="/images/a-medida.jpg" alt>
+                <img src="/images/cepilladora.jpg" alt>
               </div>
               <div class="timeline-card-body">
                 <h4>{{ $t('tailored') }}</h4>

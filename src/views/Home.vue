@@ -12,7 +12,7 @@
               <router-link to="/varillas">
                 <div class="timeline-card">
                   <div class="timeline-card-preview">
-                    <img src="/images/varillas.jpg" alt />
+                    <img src="/images/varillas_600.jpg" alt />
                   </div>
                   <div class="timeline-card-body">
                     <h4>{{ $t('rod_or_rod') }}</h4>
@@ -25,7 +25,7 @@
               <router-link to="/persianas">
                 <div class="timeline-card">
                   <div class="timeline-card-preview">
-                    <img src="/images/persianas.jpg" alt />
+                    <img src="/images/persianas_600.jpg" alt />
                   </div>
                   <div class="timeline-card-body">
                     <h4>{{ $t('shutters') }}</h4>
